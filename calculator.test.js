@@ -27,6 +27,12 @@ test('subtracts to a negative result',  calculate(3, 7, '-'),   -4);
 test('subtracts zero',                  calculate(5, 0, '-'),    5);
 test('subtracts decimals',              calculate(3.5, 1.5, '-'), 2);
 
+console.log('\nMultiplication');
+test('multiplies two positive numbers',  calculate(3, 4, '*'),    12);
+test('multiplies by zero',               calculate(5, 0, '*'),     0);
+test('multiplies negative numbers',      calculate(-2, 3, '*'),   -6);
+test('multiplies decimals',              calculate(2.5, 4, '*'),  10);
+
 console.log('\nInvalid input');
 test('NaN first arg',  calculate(NaN, 5, '+'),   'Please enter two numbers');
 test('NaN second arg', calculate(5, NaN, '-'),   'Please enter two numbers');

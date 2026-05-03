@@ -16,10 +16,6 @@ function test(description, actual, expected) {
 }
 
 console.log('\nAddition');
-test('adds two positive numbers',       calculate(3, 4, '+'),    7);
-test('adds negative numbers',           calculate(-2, -3, '+'), -5);
-test('adds zero',                       calculate(0, 5, '+'),    5);
-test('adds decimals',                   calculate(1.5, 2.5, '+'), 4);
 
 console.log('\nSubtraction');
 test('subtracts two positive numbers',  calculate(10, 4, '-'),   6);

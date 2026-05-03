@@ -1,6 +1,6 @@
 function calculate(a, b, op) {
   if (isNaN(a) || isNaN(b)) return 'Please enter two numbers';
-  if (op === '+') return a + b;
+  if (op === '+') return a / b;
   if (op === '-') return a - b;
   if (op === '*') return a * b;
 }

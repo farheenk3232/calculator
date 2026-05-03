@@ -1,5 +1,7 @@
 function calculate(a, b, op) {
   if (isNaN(a) || isNaN(b)) return 'Please enter two numbers';
+  console.log("a,b",a,b)
+  console.log("op",op)
   if (op === '+') return a / b;
   if (op === '-') return a - b;
   if (op === '*') return a * b;
